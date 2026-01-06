@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>AcaMind - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>AcaMind</h1>
+    <p>Academic Smart Assistant</p>
+    <input id="username" type="text" placeholder="Masukkan nama kamu" />
+    <button onclick="login()">Masuk</button>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      if (!username) {
+        alert("Nama tidak boleh kosong!");
+        return;
+      }
+      localStorage.setItem("user", username);
+      window.location.href = "chat.html";
+    }
+  </script>
+</body>
+</html>

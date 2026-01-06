@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0; padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .chat-container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 350px;
+  max-width: 90vw;
+}
+
+.login-container h1 {
+  margin-bottom: 0;
+  color: #f6a821;
+}
+
+.login-container p {
+  margin-top: 5px;
+  color: #666;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.login-container button {
+  background-color: #f6a821;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-box {
+  height: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+  background: #fafafa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  background: #e1f3fb;
+  border-radius: 5px;
+}
+
+.message b {
+  color: #f6a821;
+}
+
+.input-area {
+  display: flex;
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.input-area button {
+  background-color: #f6a821;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
